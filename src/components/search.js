@@ -1,6 +1,11 @@
 angular.module('video-player')
 
 .component('search', {
+  bindings: {
+    service: '<',
+    result: '<'
+  },
+  
   controller: function() {
     this.result = function(){}
   },
